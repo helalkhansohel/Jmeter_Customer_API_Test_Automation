@@ -1,0 +1,4 @@
+step 1: go to jmeter bin folder.
+step-2:open cmd there.
+step-3:press this below cammand.
+jmeter -n -t Projects\Customer_API_Test\Customer_API_Test.jmx -l log.csv -e -o Reports 

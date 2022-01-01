@@ -130,7 +130,7 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
- &quot;id&quot;:${id},&#xd;
+ &quot;id&quot;:${id_Random},&#xd;
  &quot;name&quot;:&quot;${name}&quot;,&#xd;
  &quot;email&quot;:&quot;${email}&quot;,&#xd;
  &quot;address&quot;:&quot;${address}&quot;,&#xd;
@@ -161,7 +161,7 @@
             <stringProp name="outputFormat"></stringProp>
             <boolProp name="perThread">false</boolProp>
             <stringProp name="randomSeed"></stringProp>
-            <stringProp name="variableName">id</stringProp>
+            <stringProp name="variableName">id_Random</stringProp>
           </RandomVariableConfig>
           <hashTree/>
           <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
@@ -202,7 +202,7 @@ String location = &quot;D:\\Software\\My Software\\JMeter\\apache-jmeter-5.3\\bi
 log.info(&quot;=============Started wrting Data to CSV file=======&quot;);
 try {
 	writer = new FileWriter(location, true);
-	String custId = vars.get(&quot;id&quot;);
+	String custId = vars.get(&quot;id_Random&quot;);
 	String name = vars.get(&quot;name&quot;);
 	String email = vars.get(&quot;email&quot;);
 	String address=vars.get(&quot;address&quot;);
